@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cart">
+  <title>Cart | TechMart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="topbar">Free delivery on orders over Rs. 50,000</div>
+
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="index.html">Tech<span>Mart</span></a>
+      <nav aria-label="Main navigation" class="nav-links-wrap">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+      <form class="search" role="search" action="products.html" method="get">
+        <label for="q" class="sr-only">Search products</label>
+        <input id="q" name="q" type="search" placeholder="Search products...">
+        <button type="submit">Search</button>
+      </form>
+      <div class="nav-actions">
+        <a class="btn btn-outline cart-link" href="cart.html" aria-current="page">Cart <span class="cart-count" aria-label="3 items">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Shopping Cart</h1>
+    <div class="cart-layout">
+      <section aria-label="Cart items">
+        <ul class="cart-list">
+          <li class="cart-item">
+            <img src="images/laptop.svg" alt="Business laptop" width="80" height="80">
+            <div class="info"><h3>Business Laptop</h3><p>Rs. 120,000 each</p></div>
+            <div class="qty"><label class="sr-only" for="q-laptop.svg">Quantity for Business Laptop</label><input id="q-laptop.svg" type="number" value="1" min="1"></div>
+            <p class="line-total">Rs. 120,000</p>
+            <button class="btn-danger-link" type="button" aria-label="Remove Business Laptop">Remove</button>
+          </li>
+          <li class="cart-item">
+            <img src="images/headphones.svg" alt="Red wireless headphones" width="80" height="80">
+            <div class="info"><h3>Wireless Headphones</h3><p>Rs. 12,500 each</p></div>
+            <div class="qty"><label class="sr-only" for="q-headphones.svg">Quantity for Wireless Headphones</label><input id="q-headphones.svg" type="number" value="2" min="1"></div>
+            <p class="line-total">Rs. 25,000</p>
+            <button class="btn-danger-link" type="button" aria-label="Remove Wireless Headphones">Remove</button>
+          </li>
+          <li class="cart-item">
+            <img src="images/backpack.svg" alt="Brown travel backpack" width="80" height="80">
+            <div class="info"><h3>Travel Backpack</h3><p>Rs. 4,500 each</p></div>
+            <div class="qty"><label class="sr-only" for="q-backpack.svg">Quantity for Travel Backpack</label><input id="q-backpack.svg" type="number" value="1" min="1"></div>
+            <p class="line-total">Rs. 4,500</p>
+            <button class="btn-danger-link" type="button" aria-label="Remove Travel Backpack">Remove</button>
+          </li>
+        </ul>
+        <p><a href="products.html">&larr; Continue shopping</a></p>
+      </section>
+
+      <aside class="summary" aria-labelledby="sum">
+        <h2 id="sum">Order Summary</h2>
+        <div class="summary-row"><span>Subtotal (4 items)</span><span>Rs. 149,500</span></div>
+        <div class="summary-row"><span>Delivery</span><span>Free</span></div>
+        <div class="summary-row"><span>Discount</span><span>Rs. 0</span></div>
+        <div class="summary-row total"><span>Total</span><span>Rs. 149,500</span></div>
+        <a class="btn btn-block btn-accent" href="checkout.html">Proceed to Checkout</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cols">
+      <div>
+        <h2>TechMart</h2>
+        <p>Your one-stop shop for laptops, phones, audio and accessories. Lab 4 demo frontend.</p>
+      </div>
+      <div>
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Account</h2>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>support@techmart.example<br>Mon&ndash;Sat, 9am&ndash;6pm</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TechMart. Sample store for coursework.</p>
+  </footer>
+</body>
+</html>

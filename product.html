@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Business Laptop">
+  <title>Business Laptop | TechMart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="topbar">Free delivery on orders over Rs. 50,000</div>
+
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="index.html">Tech<span>Mart</span></a>
+      <nav aria-label="Main navigation" class="nav-links-wrap">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" aria-current="page">Products</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+      <form class="search" role="search" action="products.html" method="get">
+        <label for="q" class="sr-only">Search products</label>
+        <input id="q" name="q" type="search" placeholder="Search products...">
+        <button type="submit">Search</button>
+      </form>
+      <div class="nav-actions">
+        <a class="btn btn-outline cart-link" href="cart.html">Cart <span class="cart-count" aria-label="3 items">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li aria-current="page">Business Laptop</li>
+      </ol>
+    </nav>
+
+    <section class="detail" aria-labelledby="pname">
+      <div class="gallery">
+        <input class="vh" type="radio" name="g" id="g1" checked aria-label="Show image 1">
+        <input class="vh" type="radio" name="g" id="g2" aria-label="Show image 2">
+        <input class="vh" type="radio" name="g" id="g3" aria-label="Show image 3">
+        <div class="main">
+          <img class="i1" src="images/laptop.svg" alt="Business laptop, front view in teal" width="600" height="600">
+          <img class="i2" src="images/laptop-2.svg" alt="Business laptop in grey finish" width="600" height="600">
+          <img class="i3" src="images/laptop-3.svg" alt="Business laptop in dark finish" width="600" height="600">
+        </div>
+        <div class="thumbs">
+          <label for="g1"><img src="images/laptop.svg" alt="Thumbnail 1" width="150" height="150"></label>
+          <label for="g2"><img src="images/laptop-2.svg" alt="Thumbnail 2" width="150" height="150"></label>
+          <label for="g3"><img src="images/laptop-3.svg" alt="Thumbnail 3" width="150" height="150"></label>
+        </div>
+      </div>
+
+      <div class="purchase">
+        <span class="badge">Best Seller</span>
+        <h1 id="pname">Business Laptop</h1>
+        <p class="price">Rs. 120,000</p>
+        <p class="stock">In stock</p>
+        <p>14&quot; full HD display, 16 GB RAM and a 512 GB SSD. Light, fast and built for office and study.</p>
+
+        <div class="option-row">
+          <div>
+            <label for="color">Colour</label>
+            <select id="color"><option>Silver</option><option>Space Grey</option><option>Midnight</option></select>
+          </div>
+          <div>
+            <label for="qty">Quantity</label>
+            <input id="qty" type="number" value="1" min="1" max="10">
+          </div>
+        </div>
+
+        <div class="buy-row">
+          <button class="btn" type="button">Add to Cart</button>
+          <a class="btn btn-accent" href="checkout.html">Buy Now</a>
+        </div>
+
+        <table class="specs">
+          <caption class="sr-only">Specifications</caption>
+          <tbody>
+            <tr><th scope="row">Processor</th><td>Intel Core i5</td></tr>
+            <tr><th scope="row">Memory</th><td>16 GB RAM</td></tr>
+            <tr><th scope="row">Storage</th><td>512 GB SSD</td></tr>
+            <tr><th scope="row">Warranty</th><td>1 year</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="related">
+      <div class="section-head"><h2 id="related">You may also like</h2></div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="product.html" tabindex="-1" aria-hidden="true"><img src="images/tablet.svg" alt="" width="600" height="600" loading="lazy"></a>
+          <div class="body">
+            <span class="badge">New</span>
+            <span class="cat">Computers</span>
+            <h3><a href="product.html">Tablet Pro</a></h3>
+            <p class="price">Rs. 65,000</p>
+            <button class="btn btn-block" type="button" aria-label="Add Tablet Pro to cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="product.html" tabindex="-1" aria-hidden="true"><img src="images/phone.svg" alt="" width="600" height="600" loading="lazy"></a>
+          <div class="body">
+            <span class="badge">Sale</span>
+            <span class="cat">Phones</span>
+            <h3><a href="product.html">Smartphone X</a></h3>
+            <p class="price">Rs. 85,000<span class="old">Rs. 95,000</span></p>
+            <button class="btn btn-block" type="button" aria-label="Add Smartphone X to cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="product.html" tabindex="-1" aria-hidden="true"><img src="images/watch.svg" alt="" width="600" height="600" loading="lazy"></a>
+          <div class="body">
+            <span class="badge">New</span>
+            <span class="cat">Accessories</span>
+            <h3><a href="product.html">Smart Watch</a></h3>
+            <p class="price">Rs. 18,000</p>
+            <button class="btn btn-block" type="button" aria-label="Add Smart Watch to cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="product.html" tabindex="-1" aria-hidden="true"><img src="images/keyboard.svg" alt="" width="600" height="600" loading="lazy"></a>
+          <div class="body">
+            
+            <span class="cat">Accessories</span>
+            <h3><a href="product.html">Mechanical Keyboard</a></h3>
+            <p class="price">Rs. 9,500</p>
+            <button class="btn btn-block" type="button" aria-label="Add Mechanical Keyboard to cart">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cols">
+      <div>
+        <h2>TechMart</h2>
+        <p>Your one-stop shop for laptops, phones, audio and accessories. Lab 4 demo frontend.</p>
+      </div>
+      <div>
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Account</h2>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>support@techmart.example<br>Mon&ndash;Sat, 9am&ndash;6pm</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TechMart. Sample store for coursework.</p>
+  </footer>
+</body>
+</html>

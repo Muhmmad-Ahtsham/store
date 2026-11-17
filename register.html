@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register">
+  <title>Register | TechMart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="topbar">Free delivery on orders over Rs. 50,000</div>
+
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="index.html">Tech<span>Mart</span></a>
+      <nav aria-label="Main navigation" class="nav-links-wrap">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html" aria-current="page">Register</a></li>
+        </ul>
+      </nav>
+      <form class="search" role="search" action="products.html" method="get">
+        <label for="q" class="sr-only">Search products</label>
+        <input id="q" name="q" type="search" placeholder="Search products...">
+        <button type="submit">Search</button>
+      </form>
+      <div class="nav-actions">
+        <a class="btn btn-outline cart-link" href="cart.html">Cart <span class="cart-count" aria-label="3 items">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="auth-wrap">
+      <h1>Create Account</h1>
+      <form class="form-card" action="#" method="post">
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" minlength="8" required autocomplete="new-password" aria-describedby="pw-help"><small id="pw-help">At least 8 characters.</small></div>
+        <div class="field"><label for="confirm">Confirm password</label><input id="confirm" name="confirm" type="password" minlength="8" required autocomplete="new-password"></div>
+        <button class="btn btn-block" type="submit">Register</button>
+        <p class="form-foot">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cols">
+      <div>
+        <h2>TechMart</h2>
+        <p>Your one-stop shop for laptops, phones, audio and accessories. Lab 4 demo frontend.</p>
+      </div>
+      <div>
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Account</h2>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>support@techmart.example<br>Mon&ndash;Sat, 9am&ndash;6pm</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TechMart. Sample store for coursework.</p>
+  </footer>
+</body>
+</html>
